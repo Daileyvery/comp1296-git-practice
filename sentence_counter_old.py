@@ -8,7 +8,7 @@ while True:
     user_input_sentence = input("Enter your sentence: ")
     user_character_count_sentence = 0 # this thing should be inside the while loop
 
-    if user_input_sentence == "": # I have tried putting None here but it still is keeping printing the there are 0 characters.
+    if user_input_sentence.strip() == "": # I have tried putting None here but it still is keeping printing the there are 0 characters.
         print("\n\nPlease enter a sentence.\nCannot be blank.\n")
         continue
     if user_input_sentence.lower() == "exit":
